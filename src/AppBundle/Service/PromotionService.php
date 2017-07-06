@@ -1,5 +1,5 @@
 <?php
-namespace src\AppBundle\Service;
+namespace AppBundle\Service;
 
 interface PromotionService{
     

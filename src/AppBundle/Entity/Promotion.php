@@ -32,9 +32,20 @@ class Promotion {
      */
     private $status;
     
+    public function setId(int $i){
+       return $this->id = $i;
+    }
     
     public function getId():int {
         return $this->id;
+    }
+    
+    public function setName(string $name){
+        return $this->name = $name;
+    }
+    
+    public function getName():string {
+        return $this->name;    
     }
     
     public function getCards() {

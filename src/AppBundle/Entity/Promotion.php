@@ -1,5 +1,4 @@
 <?php
-
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -18,7 +17,7 @@ class Promotion {
     protected $id;
     
     /**
-     * @ORM\OneToMany(targetEntity="card", mappedBy="id", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="Card", mappedBy="promotion", cascade={"persist"})
      */
     private $cards;
     

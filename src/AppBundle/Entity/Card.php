@@ -67,4 +67,8 @@ class Card {
         $this->name = $name;
     }
     
+    public function __toString(){
+        return '[card][id]'.$this->id.'[/id][index]'.$this->index.'[/index][group]'.$this->groupName.'[/group][name]'.$this->name.'[/name][/card]';
+    }
+    
 }

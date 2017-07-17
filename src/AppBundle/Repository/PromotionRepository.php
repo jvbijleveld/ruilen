@@ -11,7 +11,6 @@ class PromotionRepository extends EntityRepository {
         return $query->getResult();
     }
     
-    
 }
 
 ?>

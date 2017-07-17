@@ -2,7 +2,7 @@
 
 namespace AppBundle\Enum;
 
-class PromotionStatusEnum {
+class PromotionStatusEnum{
     
     const ACTIVE = 'Y';
     const DISABLED = 'N';

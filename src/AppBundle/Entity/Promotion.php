@@ -2,6 +2,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Tests\Fixtures\Entity;
 
 /**
  * @ORM\Entity(repositoryClass="AppBundle\Repository\PromotionRepository")
@@ -49,6 +50,18 @@ class Promotion {
     
     public function getCards() {
         return $this->cards;
+    }
+    
+    public function setStatus($status){
+        return $this->status = $status;
+    }
+    
+    public function getStatus(){
+        return $this->status;
+    }
+    
+    public function __toString(){
+        return '[promotion][id]'.$this->id .'[/id][name]'.$this->name.'[/name][cards]'.sizeof($this->cards).'[/cards][/promotion]'; 
     }
     
 }

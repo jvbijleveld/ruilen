@@ -22,6 +22,10 @@ class JsonSerializer {
 	public function serialize($object){
 		return $this->serializer->serialize($object, 'json');
 	}
+	
+	public function deserialize($data, $object){
+	    return $this->serializer->deserialize($data, $object, 'json');
+	}
 
 }
 
